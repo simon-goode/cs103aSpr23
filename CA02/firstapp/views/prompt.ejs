@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sonnet Bot</title>
+  </head>
+  <body>
+    <h1>GPT API Demo</h1>
+
+    <form action="/generate" method="post">
+      <label for="text">Enter some text:</label><br>
+      <input type="text" id="text" name="text"><br><br>
+      <input type="submit" value="Generate">
+    </form>
+
+    <div id="result">
+      <% if (generatedText) { %>
+        <p><%= text %></p>
+        <p><%= generatedText %></p>
+      <% } %>
+    </div>
+  </body>
+</html>
